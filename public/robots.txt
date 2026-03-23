@@ -1,0 +1,25 @@
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://philosophical-train-journey.com/sitemap.xml
+
+# Disallow crawling of admin or sensitive areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
