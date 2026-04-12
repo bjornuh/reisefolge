@@ -18,9 +18,10 @@ const AboutBook: React.FC = () => {
             <h2 className="text-4xl font-bold text-slate-800 mb-8">Om boken</h2>
             
             <div className="prose prose-lg text-slate-700 mb-8">
-              <p>
-                Hva er sannhet – og hvorfor betyr det noe? I denne filosofiske romanen følger vi Gustav på Bergensbanen fra Oslo til Bergen. Underveis møter han mennesker som representerer ulike perspektiver på tro, vitenskap, filosofi og livssyn. Samtalene åpner rom for refleksjon over kjærlighet, mening og de eksistensielle spørsmålene som berører oss alle.
-              </p>
+               <p>
+                 På sporet av sannheten følger Gustav på togreisen fra Oslo til Bergen. Underveis møter han mennesker som utfordrer ham på tro, vitenskap, filosofi og livssyn. Det som begynner som en samtale om sannhet, utvikler seg til en reise gjennom tap, kjærlighet, mening og spørsmålet om hva et menneske egentlig kan bygge livet sitt på.
+               </p>
+
             </div>
             
             <div className="mt-8 flex gap-4">

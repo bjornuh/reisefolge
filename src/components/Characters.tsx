@@ -4,69 +4,49 @@ import LazyImage from './LazyImage';
 const Characters: React.FC = () => {
   const characters = [
     {
-      name: "Gustav Hipnes",
-      role: "Hovedperson",
-      description: "En 29 år gammel doktor-stipendiat ved NHH, preget av uro og søken. Han representerer en rastløs sjel på jakt etter sannhet og mening i livet.",
-      image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756732988010_96fa0d36.webp"
-    },
-    {
       name: "Emma Blindås",
       role: "Filosofistudent",
-      description: "Filosofistudent fra Fredrikstad. En analytisk og empatisk sjel som utfordrer Gustav med sitt postmoderne syn på sannhet.",
+      description: "Emma er Gustavs kusine og masterstudent i filosofi. Hun er skarp, varm og mer åpen for tvetydighet enn han er. Der Gustav søker kontroll og klarhet, åpner Emma rom for spørsmål, spenning og menneskelig erfaring.",
       image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756732986989_e6c8c08c.webp"
     },
     {
       name: "Kristine Sandrud",
       role: "Den analytiske logiker",
-      description: "Matematikklærer som søker struktur og orden, men utfordres av paradokser hun ikke kan forklare.",
+      description: "Kristine er matematikklærer fra Drammen med sans for logikk, struktur og de grunnleggende spørsmålene som oppstår når systemene ikke holder. Hun gir Gustav et første møte med grensen for det sikre.",
       image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756732988628_3026f7dc.webp"
     },
     {
       name: "Rikke Doksrud",
       role: "Den rasjonelle skeptikeren",
-      description: "Biolog og naturfagslærer som setter sin lit til vitenskap og evolusjon.",
+      description: "Rikke er biolog og tydelig skeptiker. Hun presser samtalene mot naturalisme, vitenskap og det som kan forklares uten Gud. Hun er intelligent, direkte og vanskelig å avfeie.",
       image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756733747474_bf3725f4.webp"
     },
     {
       name: "Jon Møllebrekk",
       role: "Den troende historikeren",
-      description: "En reflektert samtalepartner med dyp kjennskap til teologi og idéhistorie.",
+      description: "Jon er historiker og kristen tenker. Han er rolig, reflektert og mer krevende å møte enn Gustav først aner. Han svarer ikke med slagord, men med tyngde, historie og alvor.",
       image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756733642628_acb564bb.webp"
-    },
-    {
-      name: "Pål Utseter",
-      role: "Filosofen og veilederen",
-      description: "En akademiker som kobler frihet, determinisme og livssyn i sine refleksjoner.",
-      image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756733745658_a40f7478.webp"
-    },
-    {
-      name: "Fader Vitali",
-      role: "Prest og spirituell veileder",
-      description: "Gir samtalene en åndelig dybde og utfordrer med spørsmål om tro og mening.",
-      image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756732990048_1511e643.webp"
-    },
-    {
-      name: "Ambjørn Miland",
-      role: "Den tålmodige mentor",
-      description: "Gustavs tidligere norsklærer, som minner ham på livets litterære og eksistensielle røtter.",
-      image: "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756805076976_889faf81.webp"
     }
   ];
-
 
   return (
     <section id="personer" className="py-20 bg-gradient-to-br from-purple-50 to-pink-100">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
-            Noen personer du møter
+            Menneskene på reisen
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            På reisen møter Gustav mennesker som representerer ulike perspektiver på tro, vitenskap, filosofi og livssyn.
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            På reisen møter Gustav mennesker som ikke bare representerer ulike synspunkter, men som også presser ham til å se seg selv klarere. Noen utfordrer ham med argumenter. Andre med nærvær. Alle blir en del av reisen.
           </p>
         </div>
-        
+
+        <h3 className="text-2xl font-semibold text-slate-700 text-center mb-10">
+          Her er noen eksempler
+        </h3>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
           {characters.map((character, index) => (
             <div key={index} className="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <LazyImage 

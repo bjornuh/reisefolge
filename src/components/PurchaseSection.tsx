@@ -11,8 +11,9 @@ const PurchaseSection: React.FC = () => {
             Kjøp boken
           </h2>
           <p className="text-xl opacity-90">
-            Begynn din egen filosofiske reise med Bergensbanen
+            Begynn reisen med Gustav – fra Oslo til Bergen, og inn i livets store spørsmål.
           </p>
+
         </div>
         
         <div className="flex flex-col lg:flex-row items-center gap-12">

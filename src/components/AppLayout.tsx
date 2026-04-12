@@ -11,7 +11,9 @@ import CookieBanner from './CookieBanner';
 
 // Lazy load components that are below the fold
 const AboutBook = React.lazy(() => import('./AboutBook'));
+const MeetGustav = React.lazy(() => import('./MeetGustav'));
 const Characters = React.lazy(() => import('./Characters'));
+
 const Themes = React.lazy(() => import('./Themes'));
 const TargetAudience = React.lazy(() => import('./TargetAudience'));
 const Testimonials = React.lazy(() => import('./Testimonials'));
@@ -49,8 +51,9 @@ const AppLayout: React.FC = () => {
           </Suspense>
           
           <Suspense fallback={<SectionSkeleton />}>
-            <Testimonials />
+            <MeetGustav />
           </Suspense>
+
           
           <Suspense fallback={<SectionSkeleton />}>
             <Characters />
@@ -61,8 +64,13 @@ const AppLayout: React.FC = () => {
           </Suspense>
           
           <Suspense fallback={<SectionSkeleton />}>
+            <Testimonials />
+          </Suspense>
+          
+          <Suspense fallback={<SectionSkeleton />}>
             <TargetAudience />
           </Suspense>
+
 
           
           <Suspense fallback={<SectionSkeleton />}>

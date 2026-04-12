@@ -21,9 +21,9 @@ const AuthorSection: React.FC = () => {
             
             <div className="prose prose-lg text-slate-700 space-y-4">
               <p>
-                Har mastergrad i ledelsesfag med tilleggsutdannelse i filosofi og idehistorie. 
-                Han har hatt en karriere som IT-konsulent og prosjektleder.
+                Med bakgrunn fra både ledelsesfag, filosofi og idéhistorie skriver Bjørnulf Hafstad fram en fortelling der de store spørsmålene ikke bare forklares, men leves.
               </p>
+
               
               <div className="mt-8">
                 <h4 className="text-xl font-semibold text-slate-800 mb-4">Intervju med forfatteren på kanal 10</h4>

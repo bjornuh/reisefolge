@@ -1,23 +1,23 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Search, Users, BookOpen } from 'lucide-react';
+import { Lightbulb, Compass, Cross } from 'lucide-react';
 
 const TargetAudience: React.FC = () => {
   const audiences = [
     {
-      icon: Search,
-      title: "Søkere etter sannhet",
-      description: "For alle som oppriktig leter etter mening og sannhet, og som ønsker å utforske hvordan kristen tro står seg i møte med de mest aktuelle alternativene i vestlig filosofi, vitenskap og kultur. En bok å gi til en tenkende målgruppe, der refleksjon og dialog åpner rom for nye perspektiver."
+      icon: Lightbulb,
+      title: "For tenkende lesere",
+      description: "For deg som liker bøker som utfordrer, åpner spørsmål og gir motstand uten å miste fortellingens driv."
     },
     {
-      icon: Users,
-      title: "Kristne i møte med kulturens spørsmål",
-      description: "Unge og voksne kristne som i hverdagen møter på spørsmål og ideer som utfordrer troen. Boken gir dem innsikt i de gode svarene og viser hvordan troen kan stå støtt i møte med samtidens kritiske blikk."
+      icon: Compass,
+      title: "For søkende lesere",
+      description: "For deg som er opptatt av sannhet, mening, tro, tvil og hvilke ideer som faktisk bærer et menneskeliv."
     },
     {
-      icon: BookOpen,
-      title: "Trygge troende som ønsker språk og dybde",
-      description: "Kristne som allerede har en trygg tro, men som ønsker å gå dypere – å utforske kunnskap, argumenter og språk som kan gjøre dem bedre rustet til å snakke om tro på en måte som treffer vår tids tenkende mennesker."
+      icon: Cross,
+      title: "For kristne som vil gå dypere",
+      description: "For kristne som ønsker et rikere språk for å møte samtidens spørsmål om vitenskap, moral, frihet og tro."
     }
   ];
 
@@ -26,10 +26,10 @@ const TargetAudience: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Hvem er denne boken for?
+            Hvem kan ha glede av denne boken?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            "På sporet av sannheten" henvender seg til alle som ønsker å utforske de store spørsmålene i livet med både intellektuell ærlighet og åndelig dybde.
+            Denne boken er skrevet for lesere som ikke er redde for store spørsmål, men som heller ikke ønsker tørre foredrag i romanform.
           </p>
         </div>
         

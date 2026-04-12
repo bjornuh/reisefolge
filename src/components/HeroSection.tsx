@@ -18,9 +18,22 @@ const HeroSection: React.FC = () => {
         <h2 className="text-2xl md:text-3xl font-light mb-8 opacity-90">
           En filosofisk reise med Bergensbanen
         </h2>
-        <p className="text-xl md:text-2xl mb-12 italic opacity-80 max-w-3xl mx-auto">
-          «En reise gjennom landskap, samtaler og livets store spørsmål.»
+        <p className="text-lg md:text-xl mb-8 opacity-85 max-w-3xl mx-auto leading-relaxed">
+          Gustav går om bord på toget fra Oslo til Bergen med mer enn bagasje. Han er intelligent, ambisiøs og rastløs, og bærer på spørsmål han ikke lenger klarer å holde på avstand. Reisen blir en konfrontasjon med sannhet, mening og det ubehagelige spørsmålet om hva et menneske egentlig kan stole på.
         </p>
+
+
+        {/* Featured Quote */}
+        <div className="mb-12 max-w-2xl mx-auto">
+          <blockquote className="italic text-white/90 text-lg md:text-xl leading-relaxed">
+            "Samtalene på denne togreisen gir rett og slett lyst til å lytte"
+          </blockquote>
+          <p className="mt-2 text-amber-300 text-sm md:text-base font-medium">
+            — Bjørn Are Davidsen, forfatter og foredragsholder
+          </p>
+        </div>
+
+
         <a 
           href="https://venturaforlag.no/produkt/17863/"
           target="_blank"

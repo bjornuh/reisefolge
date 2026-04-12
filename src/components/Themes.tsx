@@ -1,47 +1,27 @@
 import React from 'react';
-import { Search, Microscope, Heart, BookOpen, Scale, Flame, Sun, Compass } from 'lucide-react';
+import { Search, Microscope, Heart, Flame } from 'lucide-react';
 
 const Themes: React.FC = () => {
   const themes = [
     {
       icon: <Search className="w-8 h-8" />,
       title: "Jakten på sannhet",
-      description: "Vi lever i en tid der sannheten virker flytende – mellom fake news, post-truth og akademisk skepsis. Boken spør: Finnes sannhet, og hvorfor betyr den noe?"
+      description: "Finnes sannheten, eller er den bare et språk vi bruker for å skape orden i kaos? Boken følger Gustavs søken etter noe fast i en tid preget av relativisme, støy og mistillit."
     },
     {
       icon: <Microscope className="w-8 h-8" />,
       title: "Vitenskap og tro i dialog",
-      description: "Er Darwin og Gud på kollisjonskurs – eller kan de stå på samme spor? Reisen viser at konflikten ofte er misforstått, og åpner for nye perspektiver på hvordan vitenskap og tro kan berike hverandre."
-    },
-    {
-      icon: <BookOpen className="w-8 h-8" />,
-      title: "Filosofi som livskompass",
-      description: "Fra Platon til Nietzsche og Wittgenstein – boken gjør store tenkere tilgjengelige og viser hvordan ideene deres fortsatt preger måten vi forstår oss selv og verden på."
-    },
-    {
-      icon: <Scale className="w-8 h-8" />,
-      title: "Moral uten Gud?",
-      description: "Hva skjer med rett og galt hvis Gud er død? Humanisme, utilitarisme og sekulære alternativer granskes – og vi blir minnet om at våre verdier har røtter vi sjelden tenker over."
+      description: "Må vitenskap og tro stå mot hverandre, eller er konflikten ofte mindre nødvendig enn vi tror? Samtalene på toget undersøker spenningen mellom naturforklaring, menneskesyn og skapertro."
     },
     {
       icon: <Flame className="w-8 h-8 text-orange-500" />,
       title: "Troens kriser og nihilismens mørke",
-      description: "Nietzsches «Gud er død» og den moderne meningsløsheten settes i spill – både filosofisk og eksistensielt. Hva fyller tomrommet når de store fortellingene rakner?"
+      description: "Hva skjer når gamle sannheter bryter sammen, og ingenting lenger virker å bære? Boken går inn i tvil, tap, meningsløshet og den moderne erfaringen av å stå uten fast grunn."
     },
     {
       icon: <Heart className="w-8 h-8 text-red-500" />,
       title: "Kjærlighet som erkjennelse",
-      description: "«Jeg elskes, derfor er jeg.» Boken utforsker tanken om at sannhet ikke først og fremst er et regnestykke, men en relasjon – at kjærlighet og sannhet hører sammen."
-    },
-    {
-      icon: <Compass className="w-8 h-8" />,
-      title: "Det ondes problem",
-      description: "Hvordan kan en god Gud tillate lidelse? Med Plantinga og Levinas som samtalepartnere drøftes både filosofiske svar og de eksistensielle erfaringene av smerte og tap."
-    },
-    {
-      icon: <Sun className="w-8 h-8 text-yellow-500" />,
-      title: "Kulturens skjulte arv",
-      description: "Mye av vår frihet, rettferdighet og demokrati springer ut av kristen tradisjon – men lever i dag som om Gud ikke fantes. Hva betyr denne spenningen for oss nå?"
+      description: "Kan kjærlighet være mer enn følelse? Kan den også være knyttet til sannhet, tillit og virkelighet? Ett av bokens dypeste spørsmål er om et menneske kan leve godt uten å stole på noe større enn seg selv."
     }
   ];
 
@@ -51,7 +31,7 @@ const Themes: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Temaene i boken</h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Bergensbanen og toget blir en metafor for livets reise. Underveis møter Gustav både mennesker og ideer som speiler hans egen søken etter mening, fellesskap og mot til å tro.
+            På reisen møter Gustav ikke bare nye mennesker, men også ideer som utfordrer ham på hva sannhet, frihet, moral og kjærlighet egentlig betyr.
           </p>
         </div>
         
