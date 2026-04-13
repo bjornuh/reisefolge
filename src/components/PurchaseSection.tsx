@@ -4,16 +4,18 @@ import LazyImage from './LazyImage';
 
 const PurchaseSection: React.FC = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 text-white">
+    <section
+      className="py-20 text-white"
+      style={{ background: 'linear-gradient(to right, #d97706, #ea580c, #dc2626)' }}
+    >
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-6">
             Kjøp boken
           </h2>
-          <p className="text-xl opacity-90">
+          <p className="text-xl" style={{ opacity: 0.9 }}>
             Begynn reisen med Gustav – fra Oslo til Bergen, og inn i livets store spørsmål.
           </p>
-
         </div>
         
         <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -28,14 +30,21 @@ const PurchaseSection: React.FC = () => {
           
           {/* Book Details */}
           <div className="flex-1 text-center lg:text-left">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <div
+              className="rounded-2xl p-8"
+              style={{
+                background: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(8px)',
+                WebkitBackdropFilter: 'blur(8px)',
+              }}
+            >
               <h3 className="text-3xl font-bold mb-4">
                 På sporet av sannheten
               </h3>
-              <p className="text-xl opacity-90 mb-2">
+              <p className="text-xl mb-2" style={{ opacity: 0.9 }}>
                 En filosofisk reise med Bergensbanen
               </p>
-              <p className="text-lg opacity-80 mb-8">
+              <p className="text-lg mb-8" style={{ opacity: 0.8 }}>
                 av Bjørnulf Hafstad
               </p>
               
@@ -44,7 +53,10 @@ const PurchaseSection: React.FC = () => {
                   href="https://venturaforlag.no/produkt/17863/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-white text-amber-700 px-8 py-4 text-lg font-semibold rounded-lg hover:bg-slate-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 min-h-[60px] touch-manipulation"
+                  className="inline-flex items-center justify-center bg-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 min-h-[60px] touch-manipulation"
+                  style={{ color: '#b45309' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#f1f5f9'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#ffffff'; }}
                   aria-label="Kjøp boken hos Ventura Forlag - åpnes i nytt vindu"
                 >
                   <ShoppingCart className="w-5 h-5 mr-2" />
@@ -56,7 +68,16 @@ const PurchaseSection: React.FC = () => {
                   href="https://www.yumpu.com/no/document/read/70581271/pa-sporet-av-sannhet"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-white hover:text-amber-700 transition-all duration-300 min-h-[60px] touch-manipulation transform hover:scale-105"
+                  className="inline-flex items-center justify-center text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 min-h-[60px] touch-manipulation transform hover:scale-105"
+                  style={{ border: '2px solid white' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#ffffff';
+                    e.currentTarget.style.color = '#b45309';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                    e.currentTarget.style.color = '#ffffff';
+                  }}
                   aria-label="Les utdrag av boken - åpnes i nytt vindu"
                 >
                   Les utdrag
@@ -65,7 +86,7 @@ const PurchaseSection: React.FC = () => {
               </div>
             </div>
             
-            <p className="text-sm opacity-75 mt-6 text-center lg:text-left">
+            <p className="text-sm mt-6 text-center lg:text-left" style={{ opacity: 0.75 }}>
               Tilgjengelig som fysisk bok og e-bok
             </p>
           </div>

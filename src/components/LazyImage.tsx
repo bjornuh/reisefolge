@@ -4,6 +4,7 @@ interface LazyImageProps {
   src: string;
   alt: string;
   className?: string;
+  style?: React.CSSProperties;
   placeholder?: string;
 }
 
@@ -11,6 +12,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
   src, 
   alt, 
   className = '', 
+  style,
   placeholder = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+'
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -41,6 +43,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
       src={isInView ? src : placeholder}
       alt={alt}
       className={`transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-50'} ${className}`}
+      style={style}
       onLoad={() => setIsLoaded(true)}
       loading="lazy"
     />

@@ -13,13 +13,20 @@ const Navigation: React.FC = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 shadow-sm"
+      style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Train className="w-8 h-8 text-amber-600 mr-3" />
-            <span className="text-xl font-bold text-slate-800">På sporet av sannheten</span>
+            <Train className="w-8 h-8 mr-3" style={{ color: '#d97706' }} />
+            <span className="text-xl font-bold" style={{ color: '#1e293b' }}>På sporet av sannheten</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -28,7 +35,10 @@ const Navigation: React.FC = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-slate-700 hover:text-amber-600 transition-colors font-medium"
+                className="font-medium transition-colors"
+                style={{ color: '#334155' }}
+                onMouseEnter={(e) => { e.currentTarget.style.color = '#d97706'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.color = '#334155'; }}
               >
                 {item.name}
               </a>
@@ -37,7 +47,10 @@ const Navigation: React.FC = () => {
               href="https://venturaforlag.no/produkt/17863/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-colors font-medium"
+              className="text-white px-4 py-2 rounded-lg transition-colors font-medium"
+              style={{ backgroundColor: '#d97706' }}
+              onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#b45309'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#d97706'; }}
             >
               Kjøp boken
             </a>
@@ -46,7 +59,8 @@ const Navigation: React.FC = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100"
+            className="md:hidden p-2 rounded-lg"
+            style={{ color: '#334155' }}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -59,7 +73,8 @@ const Navigation: React.FC = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-slate-700 hover:text-amber-600 transition-colors"
+                className="block py-2 transition-colors"
+                style={{ color: '#334155' }}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -69,7 +84,8 @@ const Navigation: React.FC = () => {
               href="https://venturaforlag.no/produkt/17863/"
               target="_blank"
               rel="noopener noreferrer"
-              className="block mt-4 bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-colors text-center font-medium"
+              className="block mt-4 text-white px-4 py-2 rounded-lg transition-colors text-center font-medium"
+              style={{ backgroundColor: '#d97706' }}
             >
               Kjøp boken
             </a>

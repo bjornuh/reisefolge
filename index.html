@@ -1,70 +1,303 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="https://d64gsuwffb70l.cloudfront.net/68b562f8c6050b05b1676408_1774188116169_1cb64303.png" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO Meta Tags -->
-    <title>Filosofisk Togreise - En Reise Gjennom Sannhet og Mening</title>
-    <meta name="description" content="Utforsk sannhet og mening gjennom en filosofisk reise på Bergensbanen. Engasjer deg med mangfoldige perspektiver og eksistensielle spørsmål i denne unike boken." />
-    <meta name="keywords" content="filosofi, togreise, Bergensbanen, sannhet, mening, eksistensialisme, norsk filosofi, bok" />
-    <meta name="author" content="Philosophical Train Journey" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://philosophical-train-journey.com/" />
+    <!-- Primær SEO -->
+    <title>På sporet av sannheten – En filosofisk reise med Bergensbanen | Bjørnulf Hafstad</title>
+    <meta name="description" content="Følg Gustav på en filosofisk togreise fra Oslo til Bergen. En roman om sannhet, tro, vitenskap, kjærlighet og livets store spørsmål – skrevet av Bjørnulf Hafstad. Tilgjengelig som bok og e-bok hos Ventura Forlag." />
+    <meta name="keywords" content="På sporet av sannheten, Bjørnulf Hafstad, filosofisk roman, Bergensbanen, togreise, sannhet, tro og vitenskap, eksistensielle spørsmål, norsk bok, Ventura Forlag, filosofi, mening, kjærlighet, nihilisme, kristen apologetikk, Gustav, NHH Bergen" />
+    <meta name="author" content="Bjørnulf Hafstad" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://pasporetavsannheten.no/" />
     
+    <!-- Språk og region -->
+    <meta name="content-language" content="nb" />
+    <meta name="geo.region" content="NO" />
+    <meta name="geo.placename" content="Norge" />
+    <link rel="alternate" hreflang="nb" href="https://pasporetavsannheten.no/" />
+    <link rel="alternate" hreflang="x-default" href="https://pasporetavsannheten.no/" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="book" />
-    <meta property="og:title" content="Filosofisk Togreise - En Reise Gjennom Sannhet og Mening" />
-    <meta property="og:description" content="Utforsk sannhet og mening gjennom en filosofisk reise på Bergensbanen. Engasjer deg med mangfoldige perspektiver og eksistensielle spørsmål." />
+    <meta property="og:title" content="På sporet av sannheten – En filosofisk reise med Bergensbanen" />
+    <meta property="og:description" content="Følg Gustav på en filosofisk togreise fra Oslo til Bergen. En gripende roman om sannhet, tro, vitenskap og kjærlighet av Bjørnulf Hafstad." />
     <meta property="og:image" content="https://d64gsuwffb70l.cloudfront.net/68b562f8c6050b05b1676408_1756991292304_fd2fe796.webp" />
-    <meta property="og:url" content="https://philosophical-train-journey.com/" />
-    <meta property="og:site_name" content="Filosofisk Togreise" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="På sporet av sannheten – bokcover med toglandskap fra Bergensbanen" />
+    <meta property="og:url" content="https://pasporetavsannheten.no/" />
+    <meta property="og:site_name" content="På sporet av sannheten" />
     <meta property="og:locale" content="nb_NO" />
+    <meta property="book:author" content="Bjørnulf Hafstad" />
+    <meta property="book:tag" content="filosofi" />
+    <meta property="book:tag" content="sannhet" />
+    <meta property="book:tag" content="tro og vitenskap" />
+    <meta property="book:tag" content="Bergensbanen" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Filosofisk Togreise - En Reise Gjennom Sannhet og Mening" />
-    <meta name="twitter:description" content="Utforsk sannhet og mening gjennom en filosofisk reise på Bergensbanen." />
+    <meta name="twitter:title" content="På sporet av sannheten – Filosofisk roman av Bjørnulf Hafstad" />
+    <meta name="twitter:description" content="Gustav tar toget fra Oslo til Bergen og møter mennesker som utfordrer ham på tro, sannhet og mening. En filosofisk reise du ikke glemmer." />
     <meta name="twitter:image" content="https://d64gsuwffb70l.cloudfront.net/68b562f8c6050b05b1676408_1756991292304_fd2fe796.webp" />
+    <meta name="twitter:image:alt" content="På sporet av sannheten – bokcover" />
     
     <!-- PWA -->
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#1f2937" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="PhilTrain" />
-    
-    <!-- Structured Data for AEO -->
+    <meta name="apple-mobile-web-app-title" content="På sporet av sannheten" />
+
+    <!-- Strukturerte data: WebSite (AEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Book",
-      "name": "Filosofisk Togreise",
-      "author": {
-        "@type": "Person",
-        "name": "Philosophical Train Journey Author"
-      },
-      "description": "En filosofisk utforskning gjennom Bergensbanen som tar leseren med på en reise gjennom sannhet og mening.",
-      "genre": "Philosophy",
-      "inLanguage": "no",
-      "image": "https://d64gsuwffb70l.cloudfront.net/68b562f8c6050b05b1676408_1756991292304_fd2fe796.webp",
-      "url": "https://philosophical-train-journey.com/",
+      "@type": "WebSite",
+      "name": "På sporet av sannheten",
+      "alternateName": "På sporet av sannheten – En filosofisk reise med Bergensbanen",
+      "url": "https://pasporetavsannheten.no/",
+      "description": "Offisiell nettside for boken «På sporet av sannheten» av Bjørnulf Hafstad – en filosofisk roman om en togreise fra Oslo til Bergen.",
+      "inLanguage": "nb",
       "publisher": {
-        "@type": "Organization",
-        "name": "Philosophical Train Journey"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "299",
-        "priceCurrency": "NOK",
-        "availability": "https://schema.org/InStock"
+        "@type": "Person",
+        "name": "Bjørnulf Hafstad"
       }
     }
     </script>
 
+    <!-- Strukturerte data: Book (AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "På sporet av sannheten",
+      "alternateName": "På sporet av sannheten – En filosofisk reise med Bergensbanen",
+      "author": {
+        "@type": "Person",
+        "name": "Bjørnulf Hafstad",
+        "description": "Forfatter med bakgrunn fra ledelsesfag, filosofi og idéhistorie.",
+        "url": "https://pasporetavsannheten.no/#forfatter"
+      },
+      "description": "Gustav går om bord på toget fra Oslo til Bergen med mer enn bagasje. Han er intelligent, ambisiøs og rastløs, og bærer på spørsmål han ikke lenger klarer å holde på avstand. Reisen blir en konfrontasjon med sannhet, mening og det ubehagelige spørsmålet om hva et menneske egentlig kan stole på.",
+      "abstract": "En filosofisk roman som følger doktorgradsstipendiat Gustav på togreisen fra Oslo til Bergen. Underveis møter han mennesker som utfordrer ham på tro, vitenskap, filosofi og livssyn. Det som begynner som en samtale om sannhet, utvikler seg til en reise gjennom tap, kjærlighet, mening og spørsmålet om hva et menneske egentlig kan bygge livet sitt på.",
+      "genre": ["Filosofisk roman", "Skjønnlitteratur", "Apologetikk", "Eksistensiell litteratur"],
+      "inLanguage": "nb",
+      "bookFormat": "https://schema.org/Paperback",
+      "numberOfPages": null,
+      "image": "https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756729247792_3ca84be3.png",
+      "url": "https://pasporetavsannheten.no/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ventura Forlag",
+        "url": "https://venturaforlag.no"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "url": "https://venturaforlag.no/produkt/17863/",
+          "priceCurrency": "NOK",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Ventura Forlag"
+          }
+        }
+      ],
+      "about": [
+        { "@type": "Thing", "name": "Sannhet" },
+        { "@type": "Thing", "name": "Filosofi" },
+        { "@type": "Thing", "name": "Tro og vitenskap" },
+        { "@type": "Thing", "name": "Eksistensialisme" },
+        { "@type": "Thing", "name": "Kjærlighet" },
+        { "@type": "Thing", "name": "Nihilisme" },
+        { "@type": "Thing", "name": "Bergensbanen" }
+      ],
+      "character": [
+        {
+          "@type": "Person",
+          "name": "Gustav",
+          "description": "Doktorgradsstipendiat ved NHH i Bergen. Han søker sannhet og orden, men bærer også på tap, uro og en frykt for å gjøre seg sårbar igjen."
+        },
+        {
+          "@type": "Person",
+          "name": "Emma Blindås",
+          "description": "Gustavs kusine og masterstudent i filosofi. Skarp, varm og mer åpen for tvetydighet enn Gustav."
+        },
+        {
+          "@type": "Person",
+          "name": "Kristine Sandrud",
+          "description": "Matematikklærer fra Drammen med sans for logikk, struktur og de grunnleggende spørsmålene."
+        },
+        {
+          "@type": "Person",
+          "name": "Rikke Doksrud",
+          "description": "Biolog og tydelig skeptiker som presser samtalene mot naturalisme og vitenskap."
+        },
+        {
+          "@type": "Person",
+          "name": "Jon Møllebrekk",
+          "description": "Historiker og kristen tenker. Rolig, reflektert og mer krevende å møte enn Gustav først aner."
+        }
+      ],
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Bjørn Are Davidsen",
+            "jobTitle": "Forfatter og foredragsholder"
+          },
+          "reviewBody": "Samtalene på denne togreisen gir rett og slett lyst til å lytte, for ikke å si bestille billett til en tur med forfatteren. Boken utfordrer til å tenke, inspirerer til undring og gir nye perspektiver på tro og sannhet."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sverre Holm",
+            "jobTitle": "Emeritus professor i fysikk"
+          },
+          "reviewBody": "Bjørnulf Hafstad lar oss få ta del i en lavmælt og god samtale på toget mellom Oslo og Bergen. Samtalen bidrar med visdom, noe som vår tid så sårt trenger."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Bjørn Hinderaker",
+            "jobTitle": "Høgskolelektor, NLA Høgskolen"
+          },
+          "reviewBody": "Hafstad tar oss med på en spennende og lærerik reise inn i de store eksistensielle spørsmål. Boken anbefales både for de som ønsker hjelp til å reflektere, og for de som ønsker å forstå hvordan kristen tro kan være et aktuelt perspektiv for tenkende mennesker i dag."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Asbjørn Berland",
+            "jobTitle": "Daglig leder i BioCosmos"
+          },
+          "reviewBody": "Bli med på en reise rundt livets store spørsmål! Selv de som har lest mye apologetikk vil få nye perspektiver."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Håvald Slåtten",
+            "jobTitle": "Forfatter og journalist"
+          },
+          "reviewBody": "En høyinteressant og svært betydningsfull bok som sikkert kan bli enda viktigere fremover når mennesker i økende grad vil søke et åndelig svar i en kaotisk tilværelse."
+        }
+      ]
+    }
+    </script>
+
+    <!-- Strukturerte data: FAQPage for AEO (svarmotoroptimalisering) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hva handler boken «På sporet av sannheten»?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "«På sporet av sannheten» følger Gustav, en doktorgradsstipendiat ved NHH, på togreisen fra Oslo til Bergen. Underveis møter han mennesker som utfordrer ham på tro, vitenskap, filosofi og livssyn. Det som begynner som en samtale om sannhet, utvikler seg til en reise gjennom tap, kjærlighet, mening og spørsmålet om hva et menneske egentlig kan bygge livet sitt på."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvem har skrevet «På sporet av sannheten»?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Boken er skrevet av Bjørnulf Hafstad, som har bakgrunn fra ledelsesfag, filosofi og idéhistorie. Han skriver fram en fortelling der de store spørsmålene ikke bare forklares, men leves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvem er Gustav i boken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gustav er doktorgradsstipendiat ved NHH i Bergen. Han søker sannhet og orden, men bærer også på tap, uro og en frykt for å gjøre seg sårbar igjen. Togreisen fra Oslo til Bergen blir for ham en prøvelse på hva han faktisk tror på, og hva han egentlig frykter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvilke temaer tar boken opp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Boken utforsker fire hovedtemaer: jakten på sannhet i en tid preget av relativisme, dialogen mellom vitenskap og tro, troens kriser og nihilismens mørke, og kjærlighet som erkjennelse – om et menneske kan leve godt uten å stole på noe større enn seg selv."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvem passer boken for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Boken passer for tenkende lesere som liker bøker som utfordrer og åpner spørsmål, søkende lesere som er opptatt av sannhet, mening, tro og tvil, og kristne som ønsker et rikere språk for å møte samtidens spørsmål om vitenskap, moral, frihet og tro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvor kan jeg kjøpe «På sporet av sannheten»?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Boken er tilgjengelig som fysisk bok og e-bok hos Ventura Forlag. Du kan bestille den direkte fra venturaforlag.no. Det er også mulig å lese et utdrag av boken på Yumpu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvilke personer møter Gustav på togreisen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gustav møter blant andre Emma Blindås (filosofistudent og hans kusine), Kristine Sandrud (matematikklærer og analytisk logiker), Rikke Doksrud (biolog og rasjonell skeptiker) og Jon Møllebrekk (historiker og kristen tenker). Hver av dem utfordrer Gustav på ulike måter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hva sier anmelderne om boken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bjørn Are Davidsen sier at «samtalene på denne togreisen gir rett og slett lyst til å lytte». Sverre Holm, emeritus professor i fysikk, kaller den «en lavmælt og god samtale som bidrar med visdom». Bjørn Hinderaker ved NLA Høgskolen anbefaler den for alle som ønsker å reflektere over de store eksistensielle spørsmålene."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Strukturerte data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Hjem",
+          "item": "https://pasporetavsannheten.no/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Strukturerte data: Person (forfatter) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bjørnulf Hafstad",
+      "description": "Forfatter av «På sporet av sannheten». Har bakgrunn fra ledelsesfag, filosofi og idéhistorie.",
+      "url": "https://pasporetavsannheten.no/#forfatter",
+      "sameAs": [],
+      "knowsAbout": ["Filosofi", "Idéhistorie", "Ledelsesfag", "Apologetikk"],
+      "jobTitle": "Forfatter"
+    }
+    </script>
+
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

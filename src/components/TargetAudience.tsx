@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
 import { Lightbulb, Compass, Cross } from 'lucide-react';
 
 const TargetAudience: React.FC = () => {
@@ -22,36 +21,105 @@ const TargetAudience: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-green-50 to-emerald-100">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+    <section
+      className="relative py-20 overflow-hidden c-bg-dark-gradient"
+      style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)' }}
+    >
+      {/* Subtle decorative background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute rounded-full blur-3xl"
+          style={{
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '600px',
+            height: '600px',
+            background: 'rgba(245, 158, 11, 0.03)',
+          }}
+        />
+        <div
+          className="absolute top-0 right-0 w-80 h-80 rounded-full blur-3xl"
+          style={{
+            background: 'rgba(99, 102, 241, 0.05)',
+            transform: 'translate(50%, -50%)',
+          }}
+        />
+        <div
+          className="absolute bottom-0 left-0 w-64 h-64 rounded-full blur-3xl"
+          style={{
+            background: 'rgba(16, 185, 129, 0.05)',
+            transform: 'translate(-33%, 33%)',
+          }}
+        />
+      </div>
+
+      <div className="relative container mx-auto px-4">
+        <div className="text-center mb-14">
+          <h2
+            className="text-3xl md:text-4xl font-bold mb-4 c-text-white"
+            style={{ color: '#ffffff' }}
+          >
             Hvem kan ha glede av denne boken?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p
+            className="text-lg max-w-3xl mx-auto leading-relaxed c-text-slate-400"
+            style={{ color: '#94a3b8' }}
+          >
             Denne boken er skrevet for lesere som ikke er redde for store spørsmål, men som heller ikke ønsker tørre foredrag i romanform.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {audiences.map((audience, index) => {
             const IconComponent = audience.icon;
             return (
-              <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4 flex justify-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-blue-600" />
-                    </div>
+              <div
+                key={index}
+                className="group relative rounded-2xl p-8 text-center transition-all duration-300 c-bg-card-dark c-border-card-dark"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  backdropFilter: 'blur(8px)',
+                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                }}
+              >
+                {/* Icon */}
+                <div className="mb-5 flex justify-center">
+                  <div
+                    className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 c-bg-amber-icon c-border-amber-icon"
+                    style={{
+                      background: 'rgba(245, 158, 11, 0.1)',
+                      border: '1px solid rgba(245, 158, 11, 0.2)',
+                    }}
+                  >
+                    <IconComponent className="w-8 h-8 c-text-amber-400" style={{ color: '#fbbf24' }} />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    {audience.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {audience.description}
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+
+                {/* Title */}
+                <h3
+                  className="text-xl font-semibold mb-4 c-text-white"
+                  style={{ color: '#ffffff' }}
+                >
+                  {audience.title}
+                </h3>
+
+                {/* Description */}
+                <p
+                  className="leading-relaxed c-text-slate-400"
+                  style={{ color: '#94a3b8' }}
+                >
+                  {audience.description}
+                </p>
+              </div>
             );
           })}
         </div>

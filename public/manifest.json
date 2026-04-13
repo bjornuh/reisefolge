@@ -1,7 +1,7 @@
 {
-  "name": "Philosophical Train Journey",
-  "short_name": "PhilTrain",
-  "description": "Explore truth and meaning through a philosophical journey on the Bergen Line",
+  "name": "På sporet av sannheten – En filosofisk reise med Bergensbanen",
+  "short_name": "På sporet",
+  "description": "Offisiell nettside for boken «På sporet av sannheten» av Bjørnulf Hafstad – en filosofisk roman om en togreise fra Oslo til Bergen gjennom sannhet, tro og kjærlighet.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -22,6 +22,6 @@
     }
   ],
   "categories": ["books", "education", "philosophy"],
-  "lang": "no",
+  "lang": "nb",
   "dir": "ltr"
 }

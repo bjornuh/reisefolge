@@ -30,37 +30,44 @@ const Characters: React.FC = () => {
   ];
 
   return (
-    <section id="personer" className="py-20 bg-gradient-to-br from-purple-50 to-pink-100">
+    <section
+      id="personer"
+      className="py-20"
+      style={{ background: 'linear-gradient(to bottom right, #faf5ff, #fce7f3)' }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">
+          <h2 className="text-4xl font-bold mb-4" style={{ color: '#1e293b' }}>
             Menneskene på reisen
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: '#475569' }}>
             På reisen møter Gustav mennesker som ikke bare representerer ulike synspunkter, men som også presser ham til å se seg selv klarere. Noen utfordrer ham med argumenter. Andre med nærvær. Alle blir en del av reisen.
           </p>
         </div>
 
-        <h3 className="text-2xl font-semibold text-slate-700 text-center mb-10">
+        <h3 className="text-2xl font-semibold text-center mb-10" style={{ color: '#334155' }}>
           Her er noen eksempler
         </h3>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {characters.map((character, index) => (
-            <div key={index} className="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div
+              key={index}
+              className="rounded-xl p-6 hover:shadow-lg transition-shadow"
+              style={{ backgroundColor: '#f8fafc' }}
+            >
               <LazyImage 
                 src={character.image}
                 alt={character.name}
                 className="w-56 h-56 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-xl font-bold text-slate-800 text-center mb-2">
+              <h3 className="text-xl font-bold text-center mb-2" style={{ color: '#1e293b' }}>
                 {character.name}
               </h3>
-              <p className="text-amber-600 font-medium text-center mb-3">
+              <p className="font-medium text-center mb-3" style={{ color: '#d97706' }}>
                 {character.role}
               </p>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed" style={{ color: '#475569' }}>
                 {character.description}
               </p>
             </div>

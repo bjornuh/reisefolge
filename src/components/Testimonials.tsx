@@ -27,50 +27,68 @@ const Testimonials: React.FC = () => {
       quote: "En høyinteressant og svært betydningsfull bok som sikkert kan bli enda viktigere fremover når mennesker i økende grad vil søke et åndelig svar i en kaotisk tilværelse.",
       author: "Håvald Slåtten",
       title: "forfatter og journalist"
-    },
-    {
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      author: "Mr X",
-      title: ""
     }
   ];
 
   return (
-    <section id="anbefalinger" className="py-20 bg-gradient-to-br from-orange-50 to-yellow-100">
+    <section
+      id="anbefalinger"
+      className="py-20"
+      style={{ background: 'linear-gradient(to bottom right, #fff7ed, #fef9c3)' }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Anbefalinger</h2>
-          <p className="text-xl text-slate-600">
+          <h2 className="text-4xl font-bold mb-4" style={{ color: '#1e293b' }}>Anbefalinger</h2>
+          <p className="text-xl" style={{ color: '#475569' }}>
             Hva andre sier om boken
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.slice(0, -1).map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <Quote className="w-8 h-8 text-amber-600 mb-4" />
-              <blockquote className="text-slate-700 mb-6 leading-relaxed">
+              <Quote className="w-8 h-8 mb-4" style={{ color: '#d97706' }} />
+              <blockquote className="mb-6 leading-relaxed" style={{ color: '#334155' }}>
                 "{testimonial.quote}"
               </blockquote>
               <div className="border-t pt-4">
-                <p className="font-bold text-slate-800">{testimonial.author}</p>
-                <p className="text-slate-600 text-sm">{testimonial.title}</p>
+                <p className="font-bold" style={{ color: '#1e293b' }}>{testimonial.author}</p>
+                <p className="text-sm" style={{ color: '#475569' }}>{testimonial.title}</p>
               </div>
             </div>
           ))}
           
-          {/* CTA Card replacing Mr X testimonial */}
-          <div className="bg-gradient-to-br from-amber-600 to-orange-600 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all text-white">
+          {/* CTA Card */}
+          <div
+            className="rounded-xl p-8 shadow-lg hover:shadow-xl transition-all text-white"
+            style={{ background: 'linear-gradient(to bottom right, #d97706, #ea580c)' }}
+          >
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Klar til å lese?</h3>
-              <p className="mb-8 text-amber-100">
+              <p className="mb-8" style={{ color: '#fef3c7' }}>
                 Opplev denne fascinerende reisen gjennom livets store spørsmål
               </p>
               <div className="space-y-4">
-                <a href="https://www.yumpu.com/no/document/read/70581271/pa-sporet-av-sannhet" target="_blank" rel="noopener noreferrer" className="block w-full bg-white text-amber-600 font-bold py-3 px-6 rounded-lg hover:bg-amber-50 transition-colors text-center">
+                <a
+                  href="https://www.yumpu.com/no/document/read/70581271/pa-sporet-av-sannhet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                  style={{ color: '#d97706' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#fffbeb'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#ffffff'; }}
+                >
                   Les uttdrag
                 </a>
-                <a href="https://venturaforlag.no/produkt/17863/" target="_blank" rel="noopener noreferrer" className="block w-full bg-amber-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-amber-800 transition-colors text-center">
+                <a
+                  href="https://venturaforlag.no/produkt/17863/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
+                  style={{ backgroundColor: '#b45309' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#92400e'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#b45309'; }}
+                >
                   Kjøp boken
                 </a>
               </div>

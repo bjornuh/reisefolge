@@ -4,26 +4,25 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-900 text-white py-16">
+    <footer className="text-white py-16" style={{ backgroundColor: '#0f172a' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <Train className="w-8 h-8 text-amber-400 mr-3" />
+              <Train className="w-8 h-8 mr-3" style={{ color: '#fbbf24' }} />
               <h3 className="text-2xl font-bold">På sporet av sannheten</h3>
             </div>
-            <p className="text-slate-300 mb-6 max-w-md">
+            <p className="mb-6 max-w-md" style={{ color: '#cbd5e1' }}>
               En filosofisk reise med Bergensbanen som utforsker sannhet, tro og kjærlighet 
               gjennom samtaler og refleksjoner.
             </p>
-
           </div>
           
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Snarveier</h4>
-            <ul className="space-y-2 text-slate-300">
+            <ul className="space-y-2" style={{ color: '#cbd5e1' }}>
               <li><a href="#om-boken" className="hover:text-white transition-colors">Om boken</a></li>
               <li><a href="#personer" className="hover:text-white transition-colors">Personene</a></li>
               <li><a href="#temaer" className="hover:text-white transition-colors">Temaer</a></li>
@@ -34,7 +33,7 @@ const Footer: React.FC = () => {
           {/* Contact & Legal */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt & Juridisk</h4>
-            <ul className="space-y-2 text-slate-300">
+            <ul className="space-y-2" style={{ color: '#cbd5e1' }}>
               <li>
                 <a 
                   href="https://venturaforlag.no/produkt/17863/"
@@ -60,7 +59,7 @@ const Footer: React.FC = () => {
                   to="/personvern" 
                   className="hover:text-white transition-colors flex items-center gap-2"
                 >
-                  <Shield className="w-4 h-4 text-amber-400" />
+                  <Shield className="w-4 h-4" style={{ color: '#fbbf24' }} />
                   Personvernerklæring
                 </Link>
               </li>
@@ -68,7 +67,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="border-t border-slate-700 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400">
+        <div className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTop: '1px solid #334155', color: '#94a3b8' }}>
           <p>&copy; 2025 Bjørnulf Hafstad. Alle rettigheter reservert.</p>
           <Link 
             to="/personvern" 

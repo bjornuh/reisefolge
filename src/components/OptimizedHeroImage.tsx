@@ -18,8 +18,14 @@ const OptimizedHeroImage: React.FC<OptimizedHeroImageProps> = ({ className = '' 
     <div className={`absolute inset-0 ${className}`}>
       {/* Loading placeholder */}
       {!imageLoaded && (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 animate-pulse">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div
+          className="absolute inset-0 animate-pulse"
+          style={{ background: 'linear-gradient(to bottom right, #1e293b, #0f172a)' }}
+        >
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.6), transparent)' }}
+          />
         </div>
       )}
 
@@ -36,7 +42,10 @@ const OptimizedHeroImage: React.FC<OptimizedHeroImageProps> = ({ className = '' 
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div
+        className="absolute inset-0"
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
+      />
     </div>
   );
 };

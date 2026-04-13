@@ -12,14 +12,30 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# AI-søkemotorer og svarmotorer (AEO)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: *
 Allow: /
 Crawl-delay: 2
 
-# Sitemap location
-Sitemap: https://philosophical-train-journey.com/sitemap.xml
+# Sitemap-plassering
+Sitemap: https://pasporetavsannheten.no/sitemap.xml
 
-# Disallow crawling of admin or sensitive areas
+# Ikke indekser admin- eller sensitive områder
 Disallow: /admin/
 Disallow: /api/
 Disallow: /*.json$

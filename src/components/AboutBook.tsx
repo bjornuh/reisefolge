@@ -3,7 +3,11 @@ import LazyImage from './LazyImage';
 
 const AboutBook: React.FC = () => {
   return (
-    <section id="om-boken" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section
+      id="om-boken"
+      className="py-20"
+      style={{ background: 'linear-gradient(to bottom right, #eff6ff, #e0e7ff)' }}
+    >
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -15,13 +19,12 @@ const AboutBook: React.FC = () => {
           </div>
           
           <div>
-            <h2 className="text-4xl font-bold text-slate-800 mb-8">Om boken</h2>
+            <h2 className="text-4xl font-bold mb-8" style={{ color: '#1e293b' }}>Om boken</h2>
             
-            <div className="prose prose-lg text-slate-700 mb-8">
+            <div className="prose prose-lg mb-8" style={{ color: '#334155' }}>
                <p>
                  På sporet av sannheten følger Gustav på togreisen fra Oslo til Bergen. Underveis møter han mennesker som utfordrer ham på tro, vitenskap, filosofi og livssyn. Det som begynner som en samtale om sannhet, utvikler seg til en reise gjennom tap, kjærlighet, mening og spørsmålet om hva et menneske egentlig kan bygge livet sitt på.
                </p>
-
             </div>
             
             <div className="mt-8 flex gap-4">
@@ -29,7 +32,10 @@ const AboutBook: React.FC = () => {
                 href="https://venturaforlag.no/produkt/17863/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-slate-800 hover:bg-slate-900 text-white px-6 py-3 rounded-lg transition-colors"
+                className="inline-block text-white px-6 py-3 rounded-lg transition-colors"
+                style={{ backgroundColor: '#1e293b' }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#0f172a'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#1e293b'; }}
               >
                 Kjøp boken
               </a>
@@ -37,7 +43,10 @@ const AboutBook: React.FC = () => {
                 href="https://www.yumpu.com/no/document/read/70581271/pa-sporet-av-sannhet"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+                className="inline-block text-white px-6 py-3 rounded-lg transition-colors"
+                style={{ backgroundColor: '#2563eb' }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#1d4ed8'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#2563eb'; }}
               >
                 Les utdrag
               </a>

@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://philosophical-train-journey.com/</loc>
-    <lastmod>2025-09-27T11:13:00+00:00</lastmod>
+    <loc>https://pasporetavsannheten.no/</loc>
+    <lastmod>2026-04-13T05:49:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://d64gsuwffb70l.cloudfront.net/68b562f8c6050b05b1676408_1756991292304_fd2fe796.webp</image:loc>
-      <image:title>Philosophical Train Journey Book Cover</image:title>
-      <image:caption>A philosophical exploration through the Bergen Line railway journey</image:caption>
+      <image:title>På sporet av sannheten – Bergensbanen toglandskap</image:title>
+      <image:caption>Filosofisk togreise fra Oslo til Bergen gjennom norsk fjelllandskap</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756729247792_3ca84be3.png</image:loc>
+      <image:title>På sporet av sannheten – bokcover</image:title>
+      <image:caption>Bokcover for «På sporet av sannheten» av Bjørnulf Hafstad, utgitt på Ventura Forlag</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1774188273226_14fe6800.png</image:loc>
+      <image:title>Bjørnulf Hafstad – forfatter</image:title>
+      <image:caption>Bjørnulf Hafstad, forfatter av «På sporet av sannheten»</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://d64gsuwffb70l.cloudfront.net/6817c130d4a982ff397560a1_1756732988010_96fa0d36.webp</image:loc>
+      <image:title>Gustav – hovedperson</image:title>
+      <image:caption>Gustav, doktorgradsstipendiat ved NHH og hovedpersonen i «På sporet av sannheten»</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pasporetavsannheten.no/personvern</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
