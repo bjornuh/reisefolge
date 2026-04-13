@@ -101,78 +101,10 @@
   }
 }
 
-/* ============================================
-   CUSTOM COLOR UTILITIES - NEVER PURGED
-   These are plain CSS, not Tailwind utilities,
-   so they will always be included in the build.
-   ============================================ */
-
-/* White text - critical for dark sections */
-.c-text-white { color: #ffffff !important; }
-.c-text-white-90 { color: rgba(255,255,255,0.9) !important; }
-.c-text-white-85 { color: rgba(255,255,255,0.85) !important; }
-.c-text-white-75 { color: rgba(255,255,255,0.75) !important; }
-
-/* Slate text colors */
-.c-text-slate-300 { color: #cbd5e1 !important; }
-.c-text-slate-400 { color: #94a3b8 !important; }
-.c-text-slate-500 { color: #64748b !important; }
-.c-text-slate-600 { color: #475569 !important; }
-.c-text-slate-800 { color: #1e293b !important; }
-
-/* Amber/Gold text colors */
-.c-text-amber-300 { color: #fcd34d !important; }
-.c-text-amber-400 { color: #fbbf24 !important; }
-.c-text-amber-600 { color: #d97706 !important; }
-.c-text-amber-700 { color: #b45309 !important; }
-
-/* Blue text colors */
-.c-text-blue-600 { color: #2563eb !important; }
-.c-text-blue-800 { color: #1e40af !important; }
-
-/* Green text colors */
-.c-text-green-500 { color: #22c55e !important; }
-.c-text-green-700 { color: #15803d !important; }
-
-/* Background colors */
-.c-bg-white { background-color: #ffffff !important; }
-.c-bg-slate-50 { background-color: #f8fafc !important; }
-.c-bg-slate-100 { background-color: #f1f5f9 !important; }
-.c-bg-slate-800 { background-color: #1e293b !important; }
-.c-bg-slate-900 { background-color: #0f172a !important; }
-
-/* Gradient backgrounds */
-.c-bg-dark-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important; }
-.c-bg-dark-gradient-br { background: linear-gradient(to bottom right, #1e293b, #0f172a) !important; }
-.c-bg-dark-gradient-135 { background: linear-gradient(135deg, #1e293b 0%, #1a2332 50%, #0f172a 100%) !important; }
-.c-bg-amber-gradient { background: linear-gradient(to right, #d97706, #ea580c, #dc2626) !important; }
-.c-bg-warm-gradient { background: linear-gradient(to bottom right, #fff7ed, #fef9c3) !important; }
-.c-bg-blue-gradient { background: linear-gradient(to bottom right, #eff6ff, #e0e7ff) !important; }
-.c-bg-purple-gradient { background: linear-gradient(to bottom right, #faf5ff, #fce7f3) !important; }
-.c-bg-gray-gradient { background: linear-gradient(to bottom right, #f9fafb, #f1f5f9) !important; }
-.c-bg-hero-dark { background: linear-gradient(to bottom right, #1e293b, #0f172a) !important; }
-
-/* Card backgrounds for dark sections */
-.c-bg-card-dark { background: rgba(255, 255, 255, 0.05) !important; }
-.c-bg-card-dark-hover { background: rgba(255, 255, 255, 0.08) !important; }
-.c-bg-glass { background: rgba(255, 255, 255, 0.1) !important; }
-
-/* Icon backgrounds */
-.c-bg-amber-icon { background: rgba(245, 158, 11, 0.1) !important; }
-.c-border-amber-icon { border: 1px solid rgba(245, 158, 11, 0.2) !important; }
-
-/* Border colors */
-.c-border-card-dark { border: 1px solid rgba(255, 255, 255, 0.08) !important; }
-.c-border-card-dark-hover { border-color: rgba(255, 255, 255, 0.15) !important; }
-.c-border-slate-200 { border-color: #e2e8f0 !important; }
-.c-border-slate-700 { border-color: #334155 !important; }
-
-/* Hover states */
-.c-hover-white:hover { color: #ffffff !important; }
-
 .markdown-editor {
   @apply font-mono text-base leading-relaxed;
 }
+
 
 .markdown-preview {
   @apply prose max-w-none prose-blue dark:prose-invert;

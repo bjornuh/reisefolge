@@ -21,51 +21,20 @@ const TargetAudience: React.FC = () => {
   ];
 
   return (
-    <section
-      className="relative py-20 overflow-hidden c-bg-dark-gradient"
-      style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)' }}
-    >
+    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Subtle decorative background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute rounded-full blur-3xl"
-          style={{
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: '600px',
-            height: '600px',
-            background: 'rgba(245, 158, 11, 0.03)',
-          }}
-        />
-        <div
-          className="absolute top-0 right-0 w-80 h-80 rounded-full blur-3xl"
-          style={{
-            background: 'rgba(99, 102, 241, 0.05)',
-            transform: 'translate(50%, -50%)',
-          }}
-        />
-        <div
-          className="absolute bottom-0 left-0 w-64 h-64 rounded-full blur-3xl"
-          style={{
-            background: 'rgba(16, 185, 129, 0.05)',
-            transform: 'translate(-33%, 33%)',
-          }}
-        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl bg-amber-500/[0.03]" />
+        <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full blur-3xl bg-indigo-500/5" />
+        <div className="absolute bottom-0 left-0 -translate-x-1/3 translate-y-1/3 w-64 h-64 rounded-full blur-3xl bg-emerald-500/5" />
       </div>
 
       <div className="relative container mx-auto px-4">
         <div className="text-center mb-14">
-          <h2
-            className="text-3xl md:text-4xl font-bold mb-4 c-text-white"
-            style={{ color: '#ffffff' }}
-          >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Hvem kan ha glede av denne boken?
           </h2>
-          <p
-            className="text-lg max-w-3xl mx-auto leading-relaxed c-text-slate-400"
-            style={{ color: '#94a3b8' }}
-          >
+          <p className="text-lg max-w-3xl mx-auto leading-relaxed text-slate-400">
             Denne boken er skrevet for lesere som ikke er redde for store spørsmål, men som heller ikke ønsker tørre foredrag i romanform.
           </p>
         </div>
@@ -76,47 +45,22 @@ const TargetAudience: React.FC = () => {
             return (
               <div
                 key={index}
-                className="group relative rounded-2xl p-8 text-center transition-all duration-300 c-bg-card-dark c-border-card-dark"
-                style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  backdropFilter: 'blur(8px)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
-                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-                }}
+                className="group relative rounded-2xl p-8 text-center transition-all duration-300 bg-white/5 backdrop-blur-sm border border-white/[0.08] hover:bg-white/[0.08] hover:border-white/15"
               >
                 {/* Icon */}
                 <div className="mb-5 flex justify-center">
-                  <div
-                    className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 c-bg-amber-icon c-border-amber-icon"
-                    style={{
-                      background: 'rgba(245, 158, 11, 0.1)',
-                      border: '1px solid rgba(245, 158, 11, 0.2)',
-                    }}
-                  >
-                    <IconComponent className="w-8 h-8 c-text-amber-400" style={{ color: '#fbbf24' }} />
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 bg-amber-500/10 border border-amber-500/20">
+                    <IconComponent className="w-8 h-8 text-amber-400" />
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3
-                  className="text-xl font-semibold mb-4 c-text-white"
-                  style={{ color: '#ffffff' }}
-                >
+                <h3 className="text-xl font-semibold mb-4 text-white">
                   {audience.title}
                 </h3>
 
                 {/* Description */}
-                <p
-                  className="leading-relaxed c-text-slate-400"
-                  style={{ color: '#94a3b8' }}
-                >
+                <p className="leading-relaxed text-slate-400">
                   {audience.description}
                 </p>
               </div>

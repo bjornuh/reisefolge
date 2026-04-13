@@ -42,7 +42,8 @@ const AppLayout: React.FC = () => {
   return (
     <ErrorBoundary>
       <SmoothScroll>
-        <div className="min-h-screen" style={{ backgroundColor: '#ffffff' }}>
+        <div className="min-h-screen bg-white">
+
           <Navigation />
           <HeroSection />
           
